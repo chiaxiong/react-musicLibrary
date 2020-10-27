@@ -5,12 +5,13 @@ import SearchBar from "./Components/SearchBar";
 import NavBar from "./Components/NavBar/NavBar";
 
 class App extends Component {
+  searchValue() {}
   render() {
     return (
       <div className='App body'>
         <header className='app-header'></header>
         <NavBar />
-        <SearchBar />
+        {/* <SearchBar /> */}
         <MusicTable />
       </div>
     );
