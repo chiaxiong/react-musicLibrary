@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
+import "../App.css";
 
-export default class MusicList extends React.Component {
+export default class MusicTable extends React.Component {
   state = {
     library: [],
   };
@@ -15,12 +16,20 @@ export default class MusicList extends React.Component {
 
   render() {
     return (
-      <table>
-        <th>title</th>
+      <table className='table-body'>
         <tbody>
+          <tr>
+            <th>Title</th>
+            <th>Album</th>
+            <th>Genre</th>
+            <th>Release Date</th>
+          </tr>
           {this.state.library.map(song => (
             <tr key={song.id}>
               <td>{song.title}</td>
+              <td>{song.album}</td>
+              <td>{song.genre}</td>
+              <td>{song.releaseDate}</td>
             </tr>
           ))}
         </tbody>
