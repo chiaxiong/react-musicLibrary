@@ -1,24 +1,38 @@
-.table-body {
-  border: black solid;
-  background-color: violet;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  border: solid rgba(0, 0, 0, 0.1);
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 }
 
-h1 {
-  border: solid;
+input {
+  color: rgba(0, 0, 0, 0.3);
   display: block;
-  background-color: pink;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+th {
+  background-color: rgb(71, 121, 138);
+  color: #fff;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  background-color: lightblue;
+}
+
+h2 {
+  display: block;
+  color: rgb(71, 121, 138);
   text-align: center;
   position: relative;
-}
-
-.search-bar {
-  background-color: aqua;
-  display: block;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 50px;
 }

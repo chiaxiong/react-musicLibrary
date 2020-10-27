@@ -2,7 +2,7 @@ import React from "react";
 
 export default class SearchBar extends React.Component {
   state = {
-    search: "search for...",
+    search: "",
   };
 
   updateSearch(event) {
@@ -12,10 +12,9 @@ export default class SearchBar extends React.Component {
   render() {
     return (
       <div>
-        <h1>The Beatles: Music Library</h1>
-
+        <h2>Music Library</h2>
         <input
-          className='search-bar'
+          placeholder='searching for...'
           type='text'
           value={this.state.search}
           onChange={this.updateSearch.bind(this)}

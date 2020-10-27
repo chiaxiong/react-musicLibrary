@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import "../App.css";
 
 export default class MusicTable extends React.Component {
   state = {
@@ -16,7 +15,7 @@ export default class MusicTable extends React.Component {
 
   render() {
     return (
-      <table className='table-body'>
+      <table>
         <tbody>
           <tr>
             <th>Title</th>
